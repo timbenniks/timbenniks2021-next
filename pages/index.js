@@ -3,10 +3,11 @@ import React from "react";
 import { RichText } from "prismic-reactjs";
 import { Client } from "../prismic-configuration";
 import Link from "next/link";
+import Layout from "../layouts";
 
 export default function Home({ doc: { data } }) {
   return (
-    <div>
+    <Layout>
       <Head>
         <title>{RichText.asText(data.body[0].primary.title)}</title>
         <link rel="icon" href="/favicon.ico" />
@@ -30,7 +31,7 @@ export default function Home({ doc: { data } }) {
           </li>
         </ul>
       </main>
-    </div>
+    </Layout>
   );
 }
 

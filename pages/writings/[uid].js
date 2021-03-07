@@ -1,4 +1,3 @@
-//pages/[uid].js
 import { Client } from "../../prismic-configuration.js";
 import { RichText } from "prismic-reactjs";
 import Prismic from "@prismicio/client";

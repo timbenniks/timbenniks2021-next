@@ -42,7 +42,7 @@ export async function getStaticPaths() {
 
   return {
     paths: uids,
-    fallback: true,
+    fallback: false,
   };
 }
 
